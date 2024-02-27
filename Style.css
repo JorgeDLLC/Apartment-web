@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif    ;
+
+}
+body{
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+h1{
+    font-family: "Satisfy", cursive;
+    color: rgb(239, 187, 0);
+    margin: 0 5rem;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+
+}
+.top  {
+    display: flex;
+}
+.botton{
+    display: flex;
+}
+
+/*header*/
+header{
+    box-shadow: rgba(0, 0, 0, 0.241) 0 1px;
+    position: relative;
+    padding: 0 2rem;
+    background-color: rgb(255, 255, 255);
+    
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links{
+    
+    background-color: transparent;
+    color: rgb(63, 63, 63);
+    padding: 1rem 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    border-radius: 5rem;
+    cursor: pointer;
+}
+.links i {
+    color: rgb(120, 120, 120);
+    margin: 0 5px 0 0;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 5rem;
+}
+
+
+/*Galeria*/
+
+.slider-frame {
+    border-radius: 15px;
+	width: 720px;
+    height: 540px;
+	margin:30px  0rem  ;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	animation: slide 15s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	height: 540px;
+	list-style: none;
+}
+
+.slider-frame img {
+	height: 540px;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+/*Descripción*/
+
+.Descripcion{
+    padding: 20px 20px;
+    float: left;
+    color: #383838;
+    margin: 40px 3rem;    
+    background-color: transparent;
+    border-top: 1px solid rgba(0, 0, 0, 0.199);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+}
+.Descripcion i{
+    float: left;
+    display: flex;
+    color: rgb(89, 89, 89);
+    margin: 20px 10px 0 0;
+}
+.Descripcion p{
+    margin: 20px 5px 0 0;
+    display: flex;
+}
+
+
+/*Mapa*/
+
+.Mapa{
+    float: left;
+    border-radius: 15px;
+    display: flex;
+    margin: 50px 3rem;
+
+}
+
+/*Anfitrion*/
+.Anfitrion{
+    background-color: rgba(55, 55, 55, 0.14);
+    border-radius: 20px;
+    border-color: solid #383838 ;
+    margin: 30px;
+    padding: 25px;
+    float: left;
+}
+.Anfitrion img{
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    float: left;
+}
+.Anfitrion h3{
+    margin: 45px 125px ;
+}
+.Anfitrion p{
+    width: 400px;
+    height: 150px;
+    box-sizing: border-box 20px 20px;
+}
